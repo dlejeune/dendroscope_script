@@ -44,7 +44,7 @@ def run_dendro_command(
     dendro_command_file = output_directory / "tmp" / f"CAP{cap_id}.dendrocmd.txt"
     error_log_file = output_directory / "logs" / f"CAP{cap_id}.dendro.log"
 
-    command = f"{dendro_path} -g --commandFile {str(dendro_command_file)} 2>&1 | tee -a {error_log_file}"
+    command = f"{dendro_path} -g --commandFile {str(dendro_command_file)}"
     # command = f"xvfb-run --auto-servernum --server-num=1 {dendro_path} +g --commandFile {str(dendro_command_file)} 2>&1 | tee -a {error_log_file}"
     subprocess.call(command, shell=True)
 
