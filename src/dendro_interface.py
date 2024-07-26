@@ -6,11 +6,11 @@ class GroupStyle:
     def __init__(
         self,
         selector: str,
-        colour: str = None,
-        shape: str = None,
-        size: str = None,
-        font: str = None,
-        fillcolour: str = None,
+        colour: str | None = None,
+        shape: str | None = None,
+        size: str | None = None,
+        font: str | None = None,
+        fillcolour: str | None = None,
     ):
 
         self.selector = selector
